@@ -1,0 +1,22 @@
+nav {
+  height: 120px;
+  width: 100%;
+  position: fixed;
+  z-index: 10000;
+  background-color: #4056A1;
+  color: #FFFFFF;
+}
+
+nav span {
+  margin: 1.5em;
+  
+}
+
+#logo {
+  font-family: 'Bungee', cursive;
+  float: left;
+}
+
+nav span:last-of-type {
+  float: right;
+}
