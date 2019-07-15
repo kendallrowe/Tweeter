@@ -44,7 +44,7 @@
  .skip-link:focus {
      left: 0;
  }
- 
+
 html {
   box-sizing: border-box;
 }
@@ -78,3 +78,9 @@ body {
 /* E7ECEF */
 /* 272932 */
 /* D8A47F */
+main {
+  width: 90%;
+  margin: 0 auto;
+
+
+}

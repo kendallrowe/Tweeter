@@ -1,0 +1,39 @@
+.new-tweet {
+  display: block;
+}
+
+.new-tweet textarea {
+  /* Clear standard formatting */
+  border: none;
+  overflow: auto;
+  outline: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  resize: none; /*remove the resize handle on the bottom right*/
+
+  /* Set styling */
+  display: block;
+  width: 100%;
+  border-bottom: 3px solid #545149;
+}
+
+.new-tweet ::placeholder {
+  color: #545149;
+  opacity: 1;
+  font-weight: bold;
+}
+
+.flexRow {
+  display: flex;
+  justify-content: space-between;
+}
+
+.new-tweet .flexRow {
+  margin-top: 2vh;
+}
+
+.new-tweet .flexRow input,
+.new-tweet .counter {
+  font-family: 'Bungee', cursive;
+}

@@ -2,7 +2,7 @@ nav {
   height: 120px;
   width: 100%;
   position: fixed;
-  z-index: 10000;
+  z-index: 900;
   background-color: #4056A1;
   color: #FFFFFF;
 }
