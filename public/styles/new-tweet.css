@@ -8,7 +8,7 @@
 }
 
 .new-tweet form {
-  margin: 2vh 0;
+  margin-top: 2vh;
 }
 
 .new-tweet textarea {
@@ -41,9 +41,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.new-tweet .flexRow {
   margin-top: 3vh;
 }
 
