@@ -18,6 +18,17 @@ nav span {
   float: left;
 }
 
-nav span:last-of-type {
+#navNewTweet {
   float: right;
+  position: relative;
+}
+
+#navNewTweet i  {
+  display: inline-block;
+  position: absolute;
+  bottom: -35px;
+  left: 50%;
+  z-index: 1001000;
+  margin-left: -5px;
+  color: #F58F29;
 }
