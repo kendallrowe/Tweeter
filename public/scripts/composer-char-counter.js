@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(document).ready(function() {
   function keyCount(event) {
     const $tweetInput = $(this);
     $counter = $tweetInput.siblings("div").children(".counter");
@@ -10,7 +10,7 @@ $(document).ready(function(){
       $counter.css("color", "#EF6969");
     }
 
-  };
+  }
   
   $(".new-tweet textarea").on("input", keyCount);
 
