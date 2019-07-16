@@ -2,7 +2,7 @@
   border: 3px solid #545149;
   margin: 10vh 0;
   text-align: center;
-  padding: 20px;
+  padding: 30px;
 }
 
 /* Header formatting */
@@ -49,7 +49,7 @@
 }
 
 .singleTweet:hover h4 {
-  color: lightgray;
+  color: #4056A1;
   text-shadow: none;
 }
 
