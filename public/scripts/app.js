@@ -35,7 +35,7 @@ $(document).ready(function(){
 
   // Return a string template with the data from a tweet object to be used to append
   function createTweetElement(tweetData) {
-    if (tweetData.length < 0) {
+    if (tweetData.length !== 0) {
       // Calculate the days since tweet using helper function
       const dateCreated = new Date(tweetData.created_at);
       const daysAgo = daysApart(dateCreated);
@@ -74,7 +74,6 @@ $(document).ready(function(){
     for (const tweet of tweets) {
       // calls createTweetElement for each tweet
       $tweet = createTweetElement(tweet);
-      console.log($tweet);
       // takes return value and appends it to the tweets container
       $('#tweets-container').append($tweet); // to add it to the page so we can make sure it's got all the right elements, classes, etc.
     }
