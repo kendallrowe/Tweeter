@@ -5,17 +5,33 @@
  */
 
 // Test / driver code (temporary). Eventually will get this from the server.
-const tweetData = {
-"user": {
-  "name": "Newton",
-  "avatars": "/images/guy-image.svg",
-  "handle": "@SirIsaac"
-},
-"content": {
-  "text": "If I have seen further it is by standing on the shoulders of giants"
-},
-"created_at": 1461116232227
-}
+// Fake data taken from initial-tweets.json
+const data = [
+  {
+    "user": {
+      "name": "Newton",
+      "avatars": "https://i.imgur.com/73hZDYK.png"
+      ,
+      "handle": "@SirIsaac"
+    },
+    "content": {
+      "text": "If I have seen further it is by standing on the shoulders of giants"
+    },
+    "created_at": 1461116232227
+  },
+  {
+    "user": {
+      "name": "Descartes",
+      "avatars": "https://i.imgur.com/nlhLi3I.png",
+      "handle": "@rd" },
+    "content": {
+      "text": "Je pense , donc je suis"
+    },
+    "created_at": 1461113959088
+  }
+]
+
+
 $(document).ready(function(){
 
   const daysInMonth  = function(month, year) { 
@@ -64,36 +80,45 @@ $(document).ready(function(){
   function createTweetElement(tweetData) {
     const dateCreated = new Date(tweetData.created_at);
     const daysAgo = daysApart(dateCreated);
-    console.log(daysAgo);
+    
     return `
-      <div class="singleTweet">
-      <header class="tweetHeader">
-        <span>
-          <img src="${tweetData.user.avatars}" alt="Created by Adrien Coquet from the Noun Project">
-          <h3>${tweetData.user.name}</h4>
-        </span>
-        <h4>${tweetData.user.handle}</h4>
-      </header>
-      
-      <div class="tweetBody">
-        <p>${tweetData.content.text}</p>
-      </div>
+            <article class="singleTweet">
+              <header class="tweetHeader">
+                <span>
+                  <img src="${tweetData.user.avatars}" alt="Created by Adrien Coquet from the Noun Project">
+                  <h3>${tweetData.user.name}</h4>
+                </span>
+                <h4>${tweetData.user.handle}</h4>
+              </header>
+              
+              <div class="tweetBody">
+                <p>${tweetData.content.text}</p>
+              </div>
 
-      <footer class="tweetFooter">
-        <span></span>
-        <span class="socials">
-          <i class="fas fa-flag"></i>
-          <i class="fas fa-retweet"></i>
-          <i class="fas fa-heart"></i>
-        </span>
-      </footer>
-    </div>
-    `
+              <footer class="tweetFooter">
+                <span>${daysAgo} ago</span>
+                <span class="socials">
+                  <i class="fas fa-flag"></i>
+                  <i class="fas fa-retweet"></i>
+                  <i class="fas fa-heart"></i>
+                </span>
+              </footer>
+            </article>
+          `
   }
 
-  const $tweet = createTweetElement(tweetData);
+  const renderTweets = function(tweets) {
+    let $tweet;
+    // loops through tweets
+    for (const tweet of tweets) {
+      // calls createTweetElement for each tweet
+      $tweet = createTweetElement(tweet);
+      console.log($tweet);
+      // takes return value and appends it to the tweets container
+      $('#tweets-container').append($tweet); // to add it to the page so we can make sure it's got all the right elements, classes, etc.
+    }
+  }
 
-  // Test / driver code (temporary)
-  console.log($tweet); // to see what it looks like
-  $('#tweets-container').append($tweet); // to add it to the page so we can make sure it's got all the right elements, classes, etc.
+
+  renderTweets(data);
 });
