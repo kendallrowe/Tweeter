@@ -1,0 +1,36 @@
+.singleTweet {
+  border: 3px solid #545149;
+  margin: 10vh 0;
+  text-align: center;
+  padding: 20px
+}
+
+/* Header formatting */
+.tweetHeader,
+.tweetHeader span,
+.tweetFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tweetHeader img{
+  max-height: 75px;
+  max-width: 75px;
+  margin-right: 10px;
+}
+
+/* Body formatting */
+.tweetBody {
+  margin: 2vh 0;
+  font-size: .9em;
+  padding: 0 15px 4vh 15px;
+  border-bottom: 3px solid #545149;
+  text-align: left;
+}
+
+/* Footer formatting */
+.tweetFooter {
+  font-size: .6em;
+  font-weight: 600;
+}
