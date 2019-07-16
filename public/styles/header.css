@@ -1,20 +1,20 @@
 header {
-  height: 400px;
   width: 100%;
   background-color: #EF6969;
-  padding-top: 120px;
+  margin-top: 120px;
+  height: 400px;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-image: url("/images/transparent-pattern.png");
+  background-image: url("/images/asfalt-light.png");
 }
 
 img#avatarPic {
-  max-height: 175px;
-  max-width: 175px;
-  margin-bottom: 1vh;
+  /* max-height: 175px;
+  max-width: 175px; */
+  margin-bottom: 3vh;
 }
 
 
