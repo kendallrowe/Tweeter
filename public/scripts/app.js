@@ -29,9 +29,9 @@ const data = [
     },
     "created_at": 1461113959088
   }
-]
+];
 
-$(document).ready(function(){
+$(document).ready(function() {
 
   // Return a string template with the data from a tweet object to be used to append
   function createTweetElement(tweetData) {
@@ -63,7 +63,7 @@ $(document).ready(function(){
                   </span>
                 </footer>
               </article>
-            `
+            `;
     }
   }
 
@@ -77,7 +77,7 @@ $(document).ready(function(){
       // takes return value and appends it to the tweets container
       $('#tweets-container').append($tweet); // to add it to the page so we can make sure it's got all the right elements, classes, etc.
     }
-  }
+  };
 
 
   renderTweets(data);
