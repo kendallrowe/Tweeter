@@ -8,6 +8,8 @@ $(document).ready(function() {
 
     if (currentCount < 0) {
       $counter.css("color", "#EF6969");
+    } else {
+      $counter.css("color", "#545149");
     }
 
   }
