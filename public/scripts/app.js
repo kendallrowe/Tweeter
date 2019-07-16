@@ -6,22 +6,30 @@
 
 $(document).ready(function() {
   const $form = $('#newTweetCreate');
-  $form.on('submit', function () {
+  $form.on('submit', function() {
     event.preventDefault();
-    if (!$("#newTweetCreate textarea").val()) {
-      const serializedInput = $(this).serialize()
+    const $input = $(this).find("input[type=text], textarea");
+    // If tweet textarea has been filled
+    if ($input.val()) {
+      const serializedInput = $(this).serialize();
       const post_url = $(this).attr("action"); //get form action url
       const request_method = $(this).attr("method"); //get form GET/POST method
-      
+  
       $.ajax({
         url : post_url,
         type: request_method,
         data : serializedInput
-      })
-      .then(function(response){ //
-        console.log(response);
+        ,
+        success: function(data) { //
+          console.log("Tweet posted!");
+          $input.val("");
+        },
+        error: function(error) { //
+          console.log("Tweet was not posted :(");
+          console.log(error);
+        }
       });
-
+      
     }
   });
 
