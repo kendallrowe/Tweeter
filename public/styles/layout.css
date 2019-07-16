@@ -80,17 +80,15 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
 }
 
-/*
- * Additional CSS can be defined below or in other CSS files, as per instructions
- */
-/* 4056A1 */
-/* EF6969 */
-/* A4B0F5 */
-/* F58F29 */
-/* 312F2F */
 main {
   width: 90%;
   margin: 0 auto;
-
-
 }
+
+/* blue #4056A1 */
+/* red #EF6969 */
+/* light blue #A4B0F5 */
+/* gold #F58F29 */
+/* dark blue#312F2F */
+/* Black: #545149 */
+

@@ -2,7 +2,7 @@
   border: 3px solid #545149;
   margin: 10vh 0;
   text-align: center;
-  padding: 20px
+  padding: 20px;
 }
 
 /* Header formatting */
@@ -33,4 +33,26 @@
 .tweetFooter {
   font-size: .6em;
   font-weight: 600;
+}
+
+.tweetFooter i {
+  margin: 0 5px;
+  color: #4056A1;
+}
+
+/* Hover Format */
+.singleTweet:hover {
+  text-shadow: -.5px 0 #545149, 0 .5px #545149, .5px 0 #545149, 0 -.5px #545149;
+  -webkit-box-shadow: 9px 9px 9px -1px rgba(164,176,245,0.81);
+  -moz-box-shadow: 9px 9px 9px -1px rgba(164,176,245,0.81);
+  box-shadow: 9px 9px 9px -1px rgba(164,176,245,0.81);
+}
+
+.singleTweet:hover h4 {
+  color: lightgray;
+  text-shadow: none;
+}
+
+.singleTweet:hover .tweetFooter {
+  text-shadow: none;
 }
