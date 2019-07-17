@@ -3,6 +3,7 @@
   margin: 10vh 0;
   text-align: center;
   padding: 30px;
+  transition: 0.3s;
 }
 
 /* Header formatting */

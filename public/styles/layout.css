@@ -81,9 +81,48 @@ main {
   margin: 0 auto;
 }
 
+#mainHeader {
+  width: 100%;
+  background-color: #EF6969;
+  margin-top: 120px;
+  height: 400px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url("/images/asfalt-light.png");
+}
+
 /* blue #4056A1 */
 /* red #EF6969 */
 /* light blue #A4B0F5 */
 /* gold #F58F29 */
 /* dark blue#312F2F */
 /* Black: #545149 */
+
+/* Desktop styles */
+@media only screen and (min-width: 1024px) {
+  #mainHeader,
+  #maincontent {
+    margin-top: 20vh;
+  }
+
+  #mainHeader {
+    width: 30%;
+    float: left;
+    margin-left: 5%;
+  }
+
+  #maincontent {
+    width: 50%;
+    float: right;
+    margin-right: 5%;
+  }
+
+  .new-tweet {
+    padding-top: 0 !important;
+  }
+
+
+}
