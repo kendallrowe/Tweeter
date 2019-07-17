@@ -25,11 +25,72 @@
 }
 
 /* Very small/mobile */
-@media only screen and (max-width: 320px) {
-  body {
-  background: red;
+@media only screen and (max-width: 768px) {
+  #newTweetError {
+    font-size: 16px;
   }
-  .singleTweet {
-  padding: 30px 0;
+}
+
+
+/* Very small/mobile */
+@media only screen and (max-width: 550px) {
+  nav {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
+
+  #newTweetError {
+    text-align: center;
+  }
+
+  #newTweetError i {
+    display: none;
+  }
+
+  #navItemContainer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #mainHeader {
+    margin-top: 200px;
+  }
+
+  #logo,
+  #navNewTweet {
+    clear: both;
+    display: block;
+    margin: 20px 0;
+  }
+}
+
+
+@media only screen and (max-width: 324px) {
+  header {
+    width: 100%;
+    text-align: center;
+  }
+
+  header img{
+    max-height: 175px;
+    max-width: 175px;
+  }
+
+  .tweetBody {
+    text-align: center;
+  }
+
+  .tweetHeader {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .tweetHeader h4 {
+    padding: 2vh 0;
+    color: #4056A1;
+  }
+  
 }
