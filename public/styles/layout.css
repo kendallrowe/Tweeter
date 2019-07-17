@@ -13,11 +13,7 @@
  html {
      font-size: 62.5%;
  }
- 
- img{
-   max-width: 100%;
-   display: block;
- }
+
  
  .visuallyhidden:not(:focus):not(:active) {
            position: absolute;
@@ -105,7 +101,7 @@ main {
 @media only screen and (min-width: 1024px) {
   #mainHeader,
   #maincontent {
-    margin-top: 20vh;
+    margin-top: 200px;
   }
 
   #mainHeader {
@@ -125,4 +121,14 @@ main {
   }
 
 
+}
+
+/* Very small/mobile */
+@media only screen and (max-width: 320px) {
+  body {
+  background: red !important;
+  }
+  .singleTweet {
+  padding: 30px 0 !important;
+  }
 }
