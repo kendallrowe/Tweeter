@@ -42,10 +42,8 @@
  }
  
  .skip-link:focus {
-     left: 0;
- }
-
- 
+  left: 0;
+}
 
 html {
   box-sizing: border-box;
@@ -56,10 +54,6 @@ html {
 
 h3 {
   font-weight: lighter;
-}
-
-h4 {
-  color: transparent;
 }
 
 h1,
@@ -85,7 +79,6 @@ body {
 main {
   width: 90%;
   margin: 0 auto;
-  position: relative;
 }
 
 /* blue #4056A1 */
@@ -94,4 +87,3 @@ main {
 /* gold #F58F29 */
 /* dark blue#312F2F */
 /* Black: #545149 */
-
