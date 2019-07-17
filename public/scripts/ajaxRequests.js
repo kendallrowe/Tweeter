@@ -19,8 +19,8 @@ $form.on('submit', function() {
       data : serializedInput
       ,
       success: function(data) { //
-        console.log("Tweet posted!", data);
         $input.val("");
+        $form.find(".counter").html("140");
         loadTweets();
       },
       error: function(error) { //
@@ -34,9 +34,10 @@ $form.on('submit', function() {
 // AJAX get tweets
 const loadTweets = function() {
   $.ajax('/tweets', { method: 'GET' })
-  .then(function (tweets) {
-    console.log($(".singleTweet").length);
-    console.log(tweets.slice($(".singleTweet").length));
-    renderTweets(tweets.slice($(".singleTweet").length));
+  .done(function (tweets) {
+    renderTweets(tweets);
+  })
+  .fail(function (error) {
+    console.log(error);
   });
 }
