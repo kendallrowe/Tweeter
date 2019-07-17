@@ -31,9 +31,6 @@ $form.on('submit', function() {
 const loadTweets = function() {
   $.ajax('/tweets', { method: 'GET' })
   .then(function (tweets) {
-    console.log('Success: ', tweets);
     renderTweets(tweets);
-
-    // $button.replaceWith(morePostsHtml);
   });
 }
