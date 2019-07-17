@@ -1,6 +1,8 @@
 .new-tweet {
   display: block;
   padding-top: 10vh;
+  position: relative;
+  
 }
 
 .new-tweet h2 {
