@@ -41,5 +41,9 @@ const daysApart = function(date) {
     unitsOfTime = "seconds";
   }
 
+  if (unitsApart === 1) {
+    unitsOfTime = unitsOfTime.substring(0, unitsOfTime.length - 1);
+  }
+
   return `${unitsApart} ${unitsOfTime}`;
 };
