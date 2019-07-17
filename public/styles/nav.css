@@ -46,6 +46,8 @@ nav span {
   width: 40px;
   height: 40px;
 
+  transition: 0.3s;
+
   /* Animation */
   animation-name: bounceUpDown;
   animation-duration: .3s;
@@ -55,3 +57,8 @@ nav span {
   animation-fill-mode: both;
 }
 
+#navNewTweet button:focus,
+#navNewTweet button:hover {
+  outline: none !important;
+  transform: scale(1.5);
+ }
