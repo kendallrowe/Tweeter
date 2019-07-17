@@ -17,7 +17,7 @@ function createTweetElement(tweetData) {
               </header>
               
               <div class="tweetBody">
-                <p>${tweetData.content.text}</p>
+                <p>${escape(tweetData.content.text)}</p>
               </div>
 
               <footer class="tweetFooter">
@@ -42,5 +42,8 @@ const renderTweets = function(tweets) {
     $tweets.unshift(createTweetElement(tweet));
     // takes return value and appends it to the tweets container
   }
-  $('#tweets-container').html($tweets); // to add it to the page so we can make sure it's got all the right elements, classes, etc.
+
+  const formattedMarkup = $tweets.join("");
+
+  $('#tweets-container').html(formattedMarkup); // to add it to the page so we can make sure it's got all the right elements, classes, etc.
 };
