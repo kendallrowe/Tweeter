@@ -21,7 +21,7 @@ function createTweetElement(tweetData) {
               </div>
 
               <footer class="tweetFooter">
-                <span>${daysAgo} ago</span>
+                <span class="daysAgo">${daysAgo} ago</span>
                 <span class="socials">
                   <i class="fas fa-flag"></i>
                   <i class="fas fa-retweet"></i>
@@ -35,12 +35,12 @@ function createTweetElement(tweetData) {
 
 // Loop through array of tweet objects and append to index page
 const renderTweets = function(tweets) {
-  let $tweet;
+  let $tweets = [];
   // loops through tweets
   for (const tweet of tweets) {
     // calls createTweetElement for each tweet
-    $tweet = createTweetElement(tweet);
+    $tweets.unshift(createTweetElement(tweet));
     // takes return value and appends it to the tweets container
-    $('#tweets-container').append($tweet); // to add it to the page so we can make sure it's got all the right elements, classes, etc.
   }
+  $('#tweets-container').html($tweets); // to add it to the page so we can make sure it's got all the right elements, classes, etc.
 };
