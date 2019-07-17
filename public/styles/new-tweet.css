@@ -57,3 +57,9 @@
   border: none;
   padding: 5px;
 }
+
+#newTweetError {
+  color: #EF6969;
+  padding-top: 2vh;
+  display: none;
+}

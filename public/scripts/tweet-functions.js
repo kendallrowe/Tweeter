@@ -4,7 +4,6 @@ const toggleInput = function() {
 
 }
 
-
 // Return a string template with the data from a tweet object to be used to append
 function createTweetElement(tweetData) {
   if (tweetData.length !== 0) {
@@ -53,3 +52,14 @@ const renderTweets = function(tweets) {
 
   $('#tweets-container').html(formattedMarkup); // to add it to the page so we can make sure it's got all the right elements, classes, etc.
 };
+
+// AJAX get tweets
+const loadTweets = function() {
+  $.ajax('/tweets', { method: 'GET' })
+  .done(function (tweets) {
+    renderTweets(tweets);
+  })
+  .fail(function (error) {
+    console.log(error);
+  });
+}
