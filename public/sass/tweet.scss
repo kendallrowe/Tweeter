@@ -12,9 +12,7 @@
 .tweetHeader,
 .tweetHeader span,
 .tweetFooter {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  @include flexThis(space-between, center, row);
 }
 
 .tweetHeader h4 {
