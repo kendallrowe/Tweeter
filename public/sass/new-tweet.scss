@@ -1,5 +1,6 @@
 @import "colors";
 @import "fonts";
+@import "mixins";
 
 .new-tweet {
   display: block;
@@ -41,9 +42,7 @@
   }
 
   .flexRow {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include flexThis(space-between, center, row);
     margin-top: 3vh;
 
     input {
@@ -62,9 +61,9 @@
 
 /* Error message */
 #newTweetError {
-  color: #EF6969;
+  color: $secondary-color;
   padding: 1vh 0;
-  border: 3px solid #EF6969;
+  border: 3px solid $secondary-color;
   margin-bottom: 3vh;
   display: none;
   border-radius: 10px;
