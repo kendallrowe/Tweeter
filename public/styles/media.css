@@ -26,13 +26,11 @@
     padding-top: 0;
   }
 }
-/* Very small/mobile */
 @media only screen and (max-width: 768px) {
   #newTweetError {
     font-size: 16px;
   }
 }
-/* Very small/mobile */
 @media only screen and (max-width: 550px) {
   nav {
     height: 200px;
@@ -65,33 +63,37 @@ nav #navNewTweet {
     text-align: center;
   }
 
-  .new-tweet:hover {
-    text-shadow: -0.25px 0 transparent, 0 0.25px transparent, 0.25px 0 transparent, 0 -0.25px transparent;
-    -webkit-box-shadow: 9px 9px 9px -1px transparent;
-    -moz-box-shadow: 9px 9px 9px -1px transparent;
-    box-shadow: 9px 9px 9px -1px transparent;
-  }
-
-  .new-tweet {
-    padding-top: 0;
-  }
-  .new-tweet .tweetBody {
+  .singleTweet .tweetBody {
     text-align: center;
   }
-  .new-tweet .tweetHeader {
+  .singleTweet .tweetHeader {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
   }
-  .new-tweet .tweetHeader h4 {
+  .singleTweet .tweetHeader h4 {
     padding: 2vh 0;
     color: #4056A1;
   }
-  .new-tweet h4,
-.new-tweet .tweetFooter span {
-    visibility: visible;
-    text-shadow: none !important;
+  .singleTweet h4,
+.singleTweet .tweetFooter .socials {
+    opacity: 1;
+  }
+
+  .singleTweet:hover {
+    text-shadow: -0.25px 0 transparent, 0 0.25px transparent, 0.25px 0 transparent, 0 -0.25px transparent;
+    -webkit-box-shadow: 9px 9px 9px -1px transparent;
+    -moz-box-shadow: 9px 9px 9px -1px transparent;
+    box-shadow: 9px 9px 9px -1px transparent;
+  }
+  .singleTweet:hover .tweetFooter .socials,
+.singleTweet:hover .tweetHeader h3,
+.singleTweet:hover .tweetHeader h4 {
+    text-shadow: -0.25px 0 transparent, 0 0.25px transparent, 0.25px 0 transparent, 0 -0.25px transparent;
+    -webkit-box-shadow: 9px 9px 9px -1px transparent;
+    -moz-box-shadow: 9px 9px 9px -1px transparent;
+    box-shadow: 9px 9px 9px -1px transparent;
   }
 
   #scrollToTop {

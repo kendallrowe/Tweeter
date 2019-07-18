@@ -28,14 +28,13 @@
 
 }
 
-/* Very small/mobile */
 @media only screen and (max-width: 768px) {
   #newTweetError {
     font-size: $smallscreen-font-size;
   }
 }
 
-/* Very small/mobile */
+// iPad styling
 @media only screen and (max-width: 550px) {
   nav {
     height: 200px;
@@ -64,14 +63,7 @@
     text-align: center;
   }
 
-  .new-tweet:hover {
-    @include textShadow(transparent);
-    @include boxShadow(transparent);
-  }
-
-  .new-tweet {
-    padding-top: 0;
-    
+  .singleTweet {
     .tweetBody {
       text-align: center;
     }
@@ -86,11 +78,24 @@
     } // tweetHeader
  
     h4,
-    .tweetFooter span{
-      visibility: visible;
-      text-shadow: none !important;
+    .tweetFooter .socials{
+      opacity: 1;
     }
-  } // new-tweet
+  } // singleTweet
+
+  // Remove hover effects
+  .singleTweet:hover {
+    @include textShadow(transparent);
+    @include boxShadow(transparent);
+
+    .tweetFooter .socials,
+    .tweetHeader h3,
+    .tweetHeader h4 {
+      @include textShadow(transparent);
+      @include boxShadow(transparent);
+    }
+
+  }
 
   #scrollToTop {
     display: none !important;
