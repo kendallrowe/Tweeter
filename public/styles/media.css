@@ -43,6 +43,17 @@
     text-align: center;
   }
 
+  .new-tweet {
+    padding-top: 0;
+  }
+
+  .new-tweet:hover {
+    text-shadow: -0.25px 0 transparent, 0 0.25px transparent, 0.25px 0 transparent, 0 -0.25px transparent;
+    -webkit-box-shadow: 9px 9px 9px -1px transparent;
+    -moz-box-shadow: 9px 9px 9px -1px transparent;
+    box-shadow: 9px 9px 9px -1px transparent;
+  }
+
   #newTweetError {
     text-align: center;
   }
@@ -60,6 +71,9 @@
 
   #mainHeader {
     margin-top: 200px;
+    margin-bottom: 10vh;
+    width: 100%;
+    text-align: center;
   }
 
   #logo,
@@ -85,16 +99,17 @@
     color: #4056A1;
   }
 
+  h4,
+.tweetFooter span {
+    visibility: visible;
+    text-shadow: none !important;
+  }
+
   #scrollToTop {
     display: none !important;
   }
 }
 @media only screen and (max-width: 324px) {
-  header {
-    width: 100%;
-    text-align: center;
-  }
-
   header img {
     max-height: 175px;
     max-width: 175px;
