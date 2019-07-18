@@ -2,7 +2,6 @@
   display: block;
   padding-top: 10vh;
   position: relative;
-  
 }
 
 .new-tweet h2 {
@@ -21,8 +20,8 @@
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
-  resize: none; /*remove the resize handle on the bottom right*/
-
+  resize: none;
+  /*remove the resize handle on the bottom right*/
   /* Set styling */
   display: block;
   width: 100%;
@@ -31,7 +30,7 @@
 
 .new-tweet ::placeholder,
 .new-tweet textarea {
-  color: #545149
+  color: #545149;
 }
 
 .new-tweet ::placeholder {
@@ -48,7 +47,7 @@
 
 .new-tweet .flexRow input,
 .new-tweet .counter {
-  font-family: 'Bungee', cursive;
+  font-family: "Bungee", cursive;
 }
 
 .new-tweet .flexRow input {
@@ -58,7 +57,6 @@
   padding: 5px;
 }
 
-
 /* Error message */
 #newTweetError {
   color: #EF6969;
@@ -66,7 +64,7 @@
   border: 3px solid #EF6969;
   margin-bottom: 3vh;
   display: none;
-  border-radius: 10px
+  border-radius: 10px;
 }
 
 #newTweetError i,
@@ -76,5 +74,7 @@
 
 #newTweetError i {
   font-size: 1.2em;
-  margin: 0 20px
+  margin: 0 20px;
 }
+
+/*# sourceMappingURL=new-tweet.css.map */

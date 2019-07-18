@@ -1,7 +1,7 @@
 /* Desktop styles */
 @media only screen and (min-width: 1024px) {
   #mainHeader,
-  #maincontent {
+#maincontent {
     margin-top: 200px;
   }
 
@@ -20,18 +20,13 @@
   .new-tweet {
     padding-top: 0;
   }
-
-
 }
-
 /* Very small/mobile */
 @media only screen and (max-width: 768px) {
   #newTweetError {
     font-size: 16px;
   }
 }
-
-
 /* Very small/mobile */
 @media only screen and (max-width: 550px) {
   nav {
@@ -60,7 +55,7 @@
   }
 
   #logo,
-  #navNewTweet {
+#navNewTweet {
     clear: both;
     display: block;
     margin: 20px 0;
@@ -84,24 +79,20 @@
     display: none !important;
   }
 }
-
-
 @media only screen and (max-width: 324px) {
   header {
     width: 100%;
     text-align: center;
   }
 
-  header img{
+  header img {
     max-height: 175px;
     max-width: 175px;
   }
-  
 }
-
 @media only screen and (max-width: 256px) {
   .tweetHeader h4,
-  .tweetHeader h3  {
+.tweetHeader h3 {
     font-size: 20px;
   }
 
@@ -110,10 +101,11 @@
     max-width: 50px;
   }
 }
-
 @media only screen and (max-width: 170px) {
   .tweetHeader h4,
-  .tweetHeader h3  {
+.tweetHeader h3 {
     word-break: break-word;
   }
 }
+
+/*# sourceMappingURL=media.css.map */
