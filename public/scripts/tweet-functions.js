@@ -1,7 +1,8 @@
 // Button to toggle visibility of view tweet form section
 const toggleInput = function() {
   $("#newTweetError").slideUp(300);
-  $(".new-tweet").slideToggle(300);
+  $(".new-tweet:visible").slideUp(300);
+  $(".new-tweet:hidden").slideDown(300).find("textarea").focus();
 };
 
 // Return a string template with the data from a tweet object to be used to append
