@@ -7,14 +7,14 @@ This project was forked from a base of starter code. Using HTML, CSS, JS, jQuery
 ## How to Use
 
 1. Home page on desktop for Tweeter!
-!["Home page on desktop for Tweeter!"](docs/main-homepage.png)
+!["Home page on desktop for Tweeter!"](public/docs/main-homepage.png)
 2. Click the arrow to get to composing your first magnificient Tweet!
-!["Click the arrow to get to composing your first magnificient Tweet!"](docs/compose-tweet.png)
-3. Writing your Tweet is simple.["Writing your Tweet is simple."](docs/write-your-tweet.png)
+!["Click the arrow to get to composing your first magnificient Tweet!"](public/docs/compose-tweet.png)
+3. Writing your Tweet is simple.["Writing your Tweet is simple."](public/docs/write-your-tweet.png)
 4. And it's responsive too? Holy...
-!["And it's responsive too? Holy..."](docs/smaller-window.png)
+!["And it's responsive too? Holy..."](public/docs/smaller-window.png)
 5. And even more responsive... ?!
-!["And even more responsive... ?!"](docs/mobile-view.png)
+!["And even more responsive... ?!"](public/docs/mobile-view.png)
 
 ## Dependencies
 
