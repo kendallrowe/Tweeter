@@ -11,6 +11,10 @@
   transition: 0.3s;
 }
 
+.singleTweet:first-of-type {
+  margin-top: 0;
+}
+
 /* Header formatting */
 .tweetHeader,
 .tweetHeader span,
@@ -21,8 +25,12 @@
   flex-direction: row;
 }
 
+.tweetHeader h3 {
+  color: #4056A1;
+}
 .tweetHeader h4 {
-  color: transparent;
+  visibility: hidden;
+  color: #4056A1;
 }
 .tweetHeader img {
   max-height: 75px;
@@ -48,20 +56,24 @@
   margin: 0 5px;
   color: #4056A1;
 }
+.tweetFooter .socials {
+  visibility: hidden;
+}
 
 /* Hover Format */
 .singleTweet:hover {
-  text-shadow: -0.5px 0 #545149, 0 0.5px #545149, 0.5px 0 #545149, 0 -0.5px #545149;
+  text-shadow: -0.25px 0 #545149, 0 0.25px #545149, 0.25px 0 #545149, 0 -0.25px #545149;
   -webkit-box-shadow: 9px 9px 9px -1px #A4B0F5;
   -moz-box-shadow: 9px 9px 9px -1px #A4B0F5;
   box-shadow: 9px 9px 9px -1px #A4B0F5;
 }
-.singleTweet:hover h4 {
-  color: #4056A1;
-  text-shadow: none;
+.singleTweet:hover h3 {
+  text-shadow: -0.25px 0 #4056A1, 0 0.25px #4056A1, 0.25px 0 #4056A1, 0 -0.25px #4056A1;
 }
-.singleTweet:hover .tweetFooter {
-  text-shadow: none;
+.singleTweet:hover h4,
+.singleTweet:hover .tweetFooter span {
+  visibility: visible;
+  text-shadow: none !important;
 }
 
 /*# sourceMappingURL=tweet.css.map */

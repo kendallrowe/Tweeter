@@ -4,3 +4,13 @@
   align-items: $align;
   flex-direction: $direction;
 }
+
+@mixin textShadow ($color) {
+  text-shadow: -.25px 0 $color, 0 .25px $color, .25px 0 $color, 0 -.25px $color;
+}
+
+@mixin boxShadow ($color) {
+  -webkit-box-shadow: 9px 9px 9px -1px $color;
+  -moz-box-shadow: 9px 9px 9px -1px $color;
+  box-shadow: 9px 9px 9px -1px $color;
+}

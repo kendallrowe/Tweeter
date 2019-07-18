@@ -43,6 +43,15 @@
     text-align: center;
   }
 
+  .new-tweet {
+    padding-top: 0;
+  }
+
+  .new-tweet:hover {
+    @include textShadow(transparent);
+    @include boxShadow(transparent);
+  }
+
   #newTweetError {
     text-align: center;
   }
@@ -57,6 +66,9 @@
 
   #mainHeader {
     margin-top: 200px;
+    margin-bottom: 10vh;
+    width: 100%;
+    text-align: center;
   }
 
   #logo,
@@ -79,6 +91,12 @@
     color: $primary-color;
   }
 
+  h4,
+  .tweetFooter span{
+    visibility: visible;
+    text-shadow: none !important;
+  }
+
   #scrollToTop {
     display: none !important;
   }
@@ -86,11 +104,6 @@
 
 
 @media only screen and (max-width: 324px) {
-  header {
-    width: 100%;
-    text-align: center;
-  }
-
   header img{
     max-height: 175px;
     max-width: 175px;

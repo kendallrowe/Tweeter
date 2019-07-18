@@ -3,9 +3,10 @@
 @import "mixins";
 
 .new-tweet {
-  display: block;
+  display: none;
   padding-top: 10vh;
   position: relative;
+  margin-bottom: 10vh;
   
   h2 {
     color: $primary-color;
