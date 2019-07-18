@@ -16,15 +16,18 @@
   @include flexThis(space-between, center, row);
 }
 
-.tweetHeader h4 {
-  color: transparent;
+.tweetHeader {
+  h4 {
+    color: transparent;
+  }
+  
+  img{
+    max-height: 75px;
+    max-width: 75px;
+    margin-right: 10px;
+  }
 }
 
-.tweetHeader img{
-  max-height: 75px;
-  max-width: 75px;
-  margin-right: 10px;
-}
 
 /* Body formatting */
 .tweetBody {
@@ -39,12 +42,13 @@
 .tweetFooter {
   font-size: .6em;
   font-weight: 600;
+  
+  i {
+    margin: 0 5px;
+    color: $primary-color;
+  }
 }
 
-.tweetFooter i {
-  margin: 0 5px;
-  color: $primary-color;
-}
 
 /* Hover Format */
 .singleTweet:hover {
@@ -52,13 +56,15 @@
   -webkit-box-shadow: 9px 9px 9px -1px $tertiary-color;
   -moz-box-shadow: 9px 9px 9px -1px $tertiary-color;
   box-shadow: 9px 9px 9px -1px $tertiary-color;
+  
+  h4 {
+    color: $primary-color;
+    text-shadow: none;
+  }
+  
+  .tweetFooter {
+    text-shadow: none;
+  }
 }
 
-.singleTweet:hover h4 {
-  color: $primary-color;
-  text-shadow: none;
-}
 
-.singleTweet:hover .tweetFooter {
-  text-shadow: none;
-}

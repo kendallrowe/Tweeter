@@ -24,7 +24,6 @@
 .tweetHeader h4 {
   color: transparent;
 }
-
 .tweetHeader img {
   max-height: 75px;
   max-width: 75px;
@@ -45,7 +44,6 @@
   font-size: 0.6em;
   font-weight: 600;
 }
-
 .tweetFooter i {
   margin: 0 5px;
   color: #4056A1;
@@ -58,12 +56,10 @@
   -moz-box-shadow: 9px 9px 9px -1px #A4B0F5;
   box-shadow: 9px 9px 9px -1px #A4B0F5;
 }
-
 .singleTweet:hover h4 {
   color: #4056A1;
   text-shadow: none;
 }
-
 .singleTweet:hover .tweetFooter {
   text-shadow: none;
 }
