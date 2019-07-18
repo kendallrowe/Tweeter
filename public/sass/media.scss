@@ -32,6 +32,29 @@
   #newTweetError {
     font-size: $smallscreen-font-size;
   }
+
+  // Remove hover effects
+  .singleTweet:hover {
+    @include textShadow(transparent);
+    @include boxShadow(transparent);
+
+    .tweetFooter .socials,
+    .tweetHeader h3,
+    .tweetHeader h4 {
+      @include textShadow(transparent);
+      @include boxShadow(transparent);
+    }
+  }
+
+  #scrollToTop {
+    display: none !important;
+  }
+
+  #navNewTweet button:focus,
+  #navNewTweet button:hover {
+    transform: none !important;
+    @include composeButtonAnimation();
+  }
 }
 
 // iPad styling
@@ -82,29 +105,6 @@
       opacity: 1;
     }
   } // singleTweet
-
-  // Remove hover effects
-  .singleTweet:hover {
-    @include textShadow(transparent);
-    @include boxShadow(transparent);
-
-    .tweetFooter .socials,
-    .tweetHeader h3,
-    .tweetHeader h4 {
-      @include textShadow(transparent);
-      @include boxShadow(transparent);
-    }
-  }
-
-  #scrollToTop {
-    display: none !important;
-  }
-
-  #navNewTweet button:focus,
-  #navNewTweet button:hover {
-    transform: none !important;
-    @include composeButtonAnimation();
-  }
 }
 
 @media only screen and (max-width: 324px) {
@@ -130,12 +130,10 @@
     max-height: 50px;
     max-width: 50px;
   }
-}
 
-@media only screen and (max-width: 170px) {
   .tweetHeader h4,
   .tweetHeader h3,
   .tweetBody p  {
-    word-break: break-word;
+    word-break: break-word !important;
   }
 }

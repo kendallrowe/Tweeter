@@ -16,6 +16,7 @@ const scrollFunction = function() {
 // When the user clicks on the button, scroll to the top of the document
 const topFunction = function() {
   $(".new-tweet").slideDown(300);
+  $("#newTweetError").css("display", "none");
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 };
