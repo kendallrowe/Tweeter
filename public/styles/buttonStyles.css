@@ -37,7 +37,7 @@
 #navNewTweet button  {
   display: inline-block;
   position: absolute;
-  
+  cursor: pointer;
   left: 50%;
   z-index: 1001000;
   margin-left: -20px;
