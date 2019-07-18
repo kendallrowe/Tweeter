@@ -1,3 +1,4 @@
+/* Fixed bottom of screen scroll to top button */
 #scrollToTop {
   display: none; /* Hidden by default */
   position: fixed; /* Fixed/sticky position */
@@ -21,6 +22,7 @@
   color: #F58F29; 
 }
 
+/* Top of screen toggle new tweet button */
 @keyframes bounceUpDown {
   from {
     bottom: -40px;

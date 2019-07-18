@@ -48,6 +48,7 @@ const daysApart = function(date) {
   return `${unitsApart} ${unitsOfTime}`;
 };
 
+// Escape function for text input from user
 const escape =  function(str) {
   let div = document.createElement('div');
   div.appendChild(document.createTextNode(str));
