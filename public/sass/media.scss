@@ -72,8 +72,7 @@
   }
 
   .tweetHeader {
-    display: flex;
-    flex-direction: column;
+    @include flexThis(space-between, center, column);
   }
 
   .tweetHeader h4 {
