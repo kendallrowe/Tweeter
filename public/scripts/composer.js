@@ -1,8 +1,10 @@
+// Function to scroll to top of screen, core taken from W3 Schools
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function() {
   scrollFunction();
 };
 
+// Hide button when at top of screen. Show when scrolling down
 const scrollFunction = function() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     document.getElementById("scrollToTop").style.display = "block";
