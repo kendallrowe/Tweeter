@@ -1,3 +1,8 @@
+/* blue #4056A1 */
+/* red #EF6969 */
+/* light blue #A4B0F5 */
+/* bright orange #F58F29 */
+/* Black: #545149 */
 /* Desktop styles */
 @media only screen and (min-width: 1024px) {
   #mainHeader,
@@ -93,7 +98,7 @@
 @media only screen and (max-width: 256px) {
   .tweetHeader h4,
 .tweetHeader h3 {
-    font-size: 20px;
+    font-size: 16px;
   }
 
   .tweetHeader img {
@@ -103,7 +108,8 @@
 }
 @media only screen and (max-width: 170px) {
   .tweetHeader h4,
-.tweetHeader h3 {
+.tweetHeader h3,
+.tweetBody p {
     word-break: break-word;
   }
 }

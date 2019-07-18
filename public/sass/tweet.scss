@@ -50,9 +50,9 @@
 /* Hover Format */
 .singleTweet:hover {
   text-shadow: -.5px 0 $black, 0 .5px $black, .5px 0 $black, 0 -.5px $black;
-  -webkit-box-shadow: 9px 9px 9px -1px rgba(164,176,245,0.81);
-  -moz-box-shadow: 9px 9px 9px -1px rgba(164,176,245,0.81);
-  box-shadow: 9px 9px 9px -1px rgba(164,176,245,0.81);
+  -webkit-box-shadow: 9px 9px 9px -1px $tertiary-color;
+  -moz-box-shadow: 9px 9px 9px -1px $tertiary-color;
+  box-shadow: 9px 9px 9px -1px $tertiary-color;
 }
 
 .singleTweet:hover h4 {

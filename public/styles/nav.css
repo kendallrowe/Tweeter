@@ -1,10 +1,15 @@
+/* blue #4056A1 */
+/* red #EF6969 */
+/* light blue #A4B0F5 */
+/* bright orange #F58F29 */
+/* Black: #545149 */
 nav {
   height: 120px;
   width: 100%;
   position: fixed;
   z-index: 900;
   background-color: #4056A1;
-  color: #FFFFFF;
+  color: #f4f1ec;
   top: 0;
   display: flex;
   align-items: center;

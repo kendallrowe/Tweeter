@@ -1,3 +1,8 @@
+/* blue #4056A1 */
+/* red #EF6969 */
+/* light blue #A4B0F5 */
+/* bright orange #F58F29 */
+/* Black: #545149 */
 /* Fixed bottom of screen scroll to top button */
 #scrollToTop {
   display: none;
@@ -41,9 +46,14 @@
 @keyframes bounceUpDown {
   from {
     bottom: -40px;
+    color: #F58F29;
+  }
+  50% {
+    color: #A4B0F5;
   }
   to {
     bottom: -50px;
+    color: #F58F29;
   }
 }
 #navNewTweet button {
@@ -61,7 +71,7 @@
   transition: 0.3s;
   /* Animation */
   animation-name: bounceUpDown;
-  animation-duration: 0.3s;
+  animation-duration: 0.8s;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
   animation-direction: alternate;
@@ -72,6 +82,7 @@
 #navNewTweet button:hover {
   outline: none !important;
   transform: scale(1.5);
+  animation: none;
 }
 
 /*# sourceMappingURL=buttonStyles.css.map */
