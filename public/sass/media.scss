@@ -94,11 +94,16 @@
       @include textShadow(transparent);
       @include boxShadow(transparent);
     }
-
   }
 
   #scrollToTop {
     display: none !important;
+  }
+
+  #navNewTweet button:focus,
+  #navNewTweet button:hover {
+    transform: none !important;
+    @include composeButtonAnimation();
   }
 }
 

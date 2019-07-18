@@ -99,6 +99,18 @@ nav #navNewTweet {
   #scrollToTop {
     display: none !important;
   }
+
+  #navNewTweet button:focus,
+#navNewTweet button:hover {
+    transform: none !important;
+    /* Animation */
+    animation-name: bounceUpDown;
+    animation-duration: 0.8s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: both;
+  }
 }
 @media only screen and (max-width: 324px) {
   header img {

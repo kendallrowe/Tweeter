@@ -1,4 +1,5 @@
 @import "colors";
+@import "mixins";
 
 /* Fixed bottom of screen scroll to top button */
 #scrollToTop {
@@ -58,13 +59,7 @@
 
   transition: 0.3s;
 
-  /* Animation */
-  animation-name: bounceUpDown;
-  animation-duration: .8s;
-  animation-timing-function: ease-in-out;              
-  animation-iteration-count: infinite;    
-  animation-direction: alternate;
-  animation-fill-mode: both;
+  @include composeButtonAnimation();
 }
 
 #navNewTweet button:focus,

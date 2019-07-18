@@ -14,3 +14,13 @@
   -moz-box-shadow: 9px 9px 9px -1px $color;
   box-shadow: 9px 9px 9px -1px $color;
 }
+
+@mixin composeButtonAnimation () {
+  /* Animation */
+  animation-name: bounceUpDown;
+  animation-duration: .8s;
+  animation-timing-function: ease-in-out;              
+  animation-iteration-count: infinite;    
+  animation-direction: alternate;
+  animation-fill-mode: both;
+}
