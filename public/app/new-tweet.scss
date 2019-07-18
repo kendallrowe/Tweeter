@@ -1,0 +1,80 @@
+.new-tweet {
+  display: block;
+  padding-top: 10vh;
+  position: relative;
+  
+}
+
+.new-tweet h2 {
+  color: #4056A1;
+}
+
+.new-tweet form {
+  margin-top: 2vh;
+}
+
+.new-tweet textarea {
+  /* Clear standard formatting */
+  border: none;
+  overflow: auto;
+  outline: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  resize: none; /*remove the resize handle on the bottom right*/
+
+  /* Set styling */
+  display: block;
+  width: 100%;
+  border-bottom: 3px solid #545149;
+}
+
+.new-tweet ::placeholder,
+.new-tweet textarea {
+  color: #545149
+}
+
+.new-tweet ::placeholder {
+  opacity: 1;
+  font-weight: bold;
+}
+
+.flexRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 3vh;
+}
+
+.new-tweet .flexRow input,
+.new-tweet .counter {
+  font-family: 'Bungee', cursive;
+}
+
+.new-tweet .flexRow input {
+  background-color: #4056A1;
+  color: #FFFFFF;
+  border: none;
+  padding: 5px;
+}
+
+
+/* Error message */
+#newTweetError {
+  color: #EF6969;
+  padding: 1vh 0;
+  border: 3px solid #EF6969;
+  margin-bottom: 3vh;
+  display: none;
+  border-radius: 10px
+}
+
+#newTweetError i,
+#newTweetError h4 {
+  display: inline;
+}
+
+#newTweetError i {
+  font-size: 1.2em;
+  margin: 0 20px
+}

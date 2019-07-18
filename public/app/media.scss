@@ -1,0 +1,119 @@
+/* Desktop styles */
+@media only screen and (min-width: 1024px) {
+  #mainHeader,
+  #maincontent {
+    margin-top: 200px;
+  }
+
+  #mainHeader {
+    width: 30%;
+    float: left;
+    margin-left: 5%;
+  }
+
+  #maincontent {
+    width: 50%;
+    float: right;
+    margin-right: 5%;
+  }
+
+  .new-tweet {
+    padding-top: 0;
+  }
+
+
+}
+
+/* Very small/mobile */
+@media only screen and (max-width: 768px) {
+  #newTweetError {
+    font-size: 16px;
+  }
+}
+
+
+/* Very small/mobile */
+@media only screen and (max-width: 550px) {
+  nav {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  #newTweetError {
+    text-align: center;
+  }
+
+  #newTweetError i {
+    display: none;
+  }
+
+  #navItemContainer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #mainHeader {
+    margin-top: 200px;
+  }
+
+  #logo,
+  #navNewTweet {
+    clear: both;
+    display: block;
+    margin: 20px 0;
+  }
+
+  .tweetBody {
+    text-align: center;
+  }
+
+  .tweetHeader {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .tweetHeader h4 {
+    padding: 2vh 0;
+    color: #4056A1;
+  }
+
+  #scrollToTop {
+    display: none !important;
+  }
+}
+
+
+@media only screen and (max-width: 324px) {
+  header {
+    width: 100%;
+    text-align: center;
+  }
+
+  header img{
+    max-height: 175px;
+    max-width: 175px;
+  }
+  
+}
+
+@media only screen and (max-width: 256px) {
+  .tweetHeader h4,
+  .tweetHeader h3  {
+    font-size: 20px;
+  }
+
+  .tweetHeader img {
+    max-height: 50px;
+    max-width: 50px;
+  }
+}
+
+@media only screen and (max-width: 170px) {
+  .tweetHeader h4,
+  .tweetHeader h3  {
+    word-break: break-word;
+  }
+}
