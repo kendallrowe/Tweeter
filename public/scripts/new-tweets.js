@@ -1,17 +1,21 @@
 const errorMessage = function($errorMsg, message) {
-  $errorMsg.children("h4").html(message);
-  $errorMsg.slideDown(300);
+
+  $("#newTweetError:hidden").children("h4").html(message);
+  console.log($("#newTweetError:hidden").children("h4").html());
+  $("#newTweetError:hidden").css("display", "none");
+  $("#newTweetError:hidden").slideDown(300);
 }
 
 // Post new tweet function
-const $form = $('#newTweetCreate');
-$form.on('submit', function() {
+$('#newTweetCreate').on('submit', function() {
+  const $form = $('#newTweetCreate')
   event.preventDefault();
   const $input = $(this).find("input[type=text], textarea");
   const $errorMsg = $("#newTweetError");
-
-  // Remove error message from view
-  $errorMsg.slideUp(300);
+  if ($errorMsg.is(":visible")) {
+    // Remove error message from view
+    $errorMsg.slideUp(300);
+  }
   
   // If tweet textarea has been filled
   if (!$input.val()) {
