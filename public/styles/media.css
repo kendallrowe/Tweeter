@@ -65,19 +65,6 @@
     display: block;
     margin: 20px 0;
   }
-}
-
-
-@media only screen and (max-width: 324px) {
-  header {
-    width: 100%;
-    text-align: center;
-  }
-
-  header img{
-    max-height: 175px;
-    max-width: 175px;
-  }
 
   .tweetBody {
     text-align: center;
@@ -92,5 +79,41 @@
     padding: 2vh 0;
     color: #4056A1;
   }
+
+  #scrollToTop {
+    display: none !important;
+  }
+}
+
+
+@media only screen and (max-width: 324px) {
+  header {
+    width: 100%;
+    text-align: center;
+  }
+
+  header img{
+    max-height: 175px;
+    max-width: 175px;
+  }
   
+}
+
+@media only screen and (max-width: 256px) {
+  .tweetHeader h4,
+  .tweetHeader h3  {
+    font-size: 20px;
+  }
+
+  .tweetHeader img {
+    max-height: 50px;
+    max-width: 50px;
+  }
+}
+
+@media only screen and (max-width: 170px) {
+  .tweetHeader h4,
+  .tweetHeader h3  {
+    word-break: break-word;
+  }
 }

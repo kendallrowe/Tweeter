@@ -1,0 +1,62 @@
+#scrollToTop {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 30px; /* Place the button at the bottom of the page */
+  right: 40px; /* Place the button 30px from the right */
+  z-index: 100; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #F58F29; /* Set a background color */
+  color: #4056A1; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 0; /* Some padding */
+  border-radius: 100%; /* Rounded corners */
+  font-size: 40px; /* Increase font size */
+  width: 125px;
+  height: 125px;
+}
+
+#scrollToTop:hover {
+  background-color: #4056A1; /* Add a dark-grey background on hover */
+  color: #F58F29; 
+}
+
+@keyframes bounceUpDown {
+  from {
+    bottom: -40px;
+  }
+
+  to {
+    bottom: -50px;
+  }
+}
+
+#navNewTweet button  {
+  display: inline-block;
+  position: absolute;
+  
+  left: 50%;
+  z-index: 1001000;
+  margin-left: -20px;
+  color: #F58F29;
+  border: none;
+  background: transparent;
+  width: 40px;
+  height: 40px;
+
+  transition: 0.3s;
+
+  /* Animation */
+  animation-name: bounceUpDown;
+  animation-duration: .3s;
+  animation-timing-function: ease-in-out;              
+  animation-iteration-count: infinite;    
+  animation-direction: alternate;
+  animation-fill-mode: both;
+}
+
+#navNewTweet button:focus,
+#navNewTweet button:hover {
+  outline: none !important;
+  transform: scale(1.5);
+ }

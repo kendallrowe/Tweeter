@@ -1,7 +1,7 @@
 $(document).ready(function() {
   function keyCount(event) {
     const $tweetInput = $(this);
-    $counter = $tweetInput.siblings("div").children(".counter");
+    const $counter = $tweetInput.siblings("div").children(".counter");
 
     const currentCount = 140 - $tweetInput.val().length;
     $counter.text(currentCount.toString());
