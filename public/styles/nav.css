@@ -6,59 +6,23 @@ nav {
   background-color: #4056A1;
   color: #FFFFFF;
   top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-nav span {
-  margin: 1.5em;
-  
+#navItemContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
 }
 
 #logo {
   font-family: 'Bungee', cursive;
-  float: left;
 }
 
 #navNewTweet {
-  float: right;
   position: relative;
 }
 
-@keyframes bounceUpDown {
-  from {
-    bottom: -40px;
-  }
-
-  to {
-    bottom: -50px;
-  }
-}
-
-#navNewTweet button  {
-  display: inline-block;
-  position: absolute;
-  
-  left: 50%;
-  z-index: 1001000;
-  margin-left: -20px;
-  color: #F58F29;
-  border: none;
-  background: transparent;
-  width: 40px;
-  height: 40px;
-
-  transition: 0.3s;
-
-  /* Animation */
-  animation-name: bounceUpDown;
-  animation-duration: .3s;
-  animation-timing-function: ease-in-out;              
-  animation-iteration-count: infinite;    
-  animation-direction: alternate;
-  animation-fill-mode: both;
-}
-
-#navNewTweet button:focus,
-#navNewTweet button:hover {
-  outline: none !important;
-  transform: scale(1.5);
- }
