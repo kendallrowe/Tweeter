@@ -1,3 +1,8 @@
+/* blue #4056A1 */
+/* red #EF6969 */
+/* light blue #A4B0F5 */
+/* bright orange #F58F29 */
+/* Black: #545149 */
 .singleTweet {
   border: 3px solid #545149;
   margin: 10vh 0;
@@ -19,7 +24,7 @@
   color: transparent;
 }
 
-.tweetHeader img{
+.tweetHeader img {
   max-height: 75px;
   max-width: 75px;
   margin-right: 10px;
@@ -28,7 +33,7 @@
 /* Body formatting */
 .tweetBody {
   margin: 2vh 0;
-  font-size: .9em;
+  font-size: 0.9em;
   padding: 0 15px 4vh 15px;
   border-bottom: 3px solid #545149;
   text-align: left;
@@ -36,7 +41,7 @@
 
 /* Footer formatting */
 .tweetFooter {
-  font-size: .6em;
+  font-size: 0.6em;
   font-weight: 600;
 }
 
@@ -47,10 +52,10 @@
 
 /* Hover Format */
 .singleTweet:hover {
-  text-shadow: -.5px 0 #545149, 0 .5px #545149, .5px 0 #545149, 0 -.5px #545149;
-  -webkit-box-shadow: 9px 9px 9px -1px rgba(164,176,245,0.81);
-  -moz-box-shadow: 9px 9px 9px -1px rgba(164,176,245,0.81);
-  box-shadow: 9px 9px 9px -1px rgba(164,176,245,0.81);
+  text-shadow: -0.5px 0 #545149, 0 0.5px #545149, 0.5px 0 #545149, 0 -0.5px #545149;
+  -webkit-box-shadow: 9px 9px 9px -1px rgba(164, 176, 245, 0.81);
+  -moz-box-shadow: 9px 9px 9px -1px rgba(164, 176, 245, 0.81);
+  box-shadow: 9px 9px 9px -1px rgba(164, 176, 245, 0.81);
 }
 
 .singleTweet:hover h4 {
@@ -61,3 +66,5 @@
 .singleTweet:hover .tweetFooter {
   text-shadow: none;
 }
+
+/*# sourceMappingURL=tweet.css.map */

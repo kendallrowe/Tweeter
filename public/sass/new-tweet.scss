@@ -1,4 +1,4 @@
-$import: "colors";
+@import "colors";
 
 .new-tweet {
   display: block;
@@ -63,7 +63,7 @@ $import: "colors";
 
 /* Error message */
 #newTweetError {
-  color: $secondary;
+  color: #EF6969;
   padding: 1vh 0;
   border: 3px solid #EF6969;
   margin-bottom: 3vh;
