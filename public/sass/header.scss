@@ -5,6 +5,7 @@
   width: 100%;
   background-color: $secondary-color;
   margin-top: 120px;
+  margin-bottom: 10vh;
   height: 400px;
   position: relative;
   @include flexThis(center, center, column);

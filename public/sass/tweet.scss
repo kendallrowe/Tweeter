@@ -21,13 +21,15 @@
 }
 
 .tweetHeader {
+  
   h3 {
     color: $primary-color;
   }
 
   h4 {
-    visibility: hidden;
+    opacity: 0;
     color: $primary-color;
+    transition: 0.3s;
   }
   
   img{
@@ -58,7 +60,8 @@
   }
 
   .socials {
-    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s;
   }
 }
 
@@ -74,7 +77,7 @@
 
   h4,
   .tweetFooter span{
-    visibility: visible;
+    opacity: 1;
     text-shadow: none !important;
   }
   

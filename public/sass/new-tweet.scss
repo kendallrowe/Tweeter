@@ -4,7 +4,6 @@
 
 .new-tweet {
   display: none;
-  padding-top: 10vh;
   position: relative;
   margin-bottom: 10vh;
   
@@ -68,6 +67,7 @@
   margin-bottom: 3vh;
   display: none;
   border-radius: 10px;
+  @include flexThis(space-between, center, row);
   
   i,
   h4 {
