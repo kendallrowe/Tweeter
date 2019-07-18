@@ -1,5 +1,6 @@
 @import "colors";
 @import "fonts";
+@import "mixins";
 
 /* Desktop styles */
 @media only screen and (min-width: 1024px) {
@@ -39,9 +40,7 @@
 @media only screen and (max-width: 550px) {
   nav {
     height: 200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flexThis(center, center, row);
     text-align: center;
   }
 
@@ -54,8 +53,7 @@
   }
 
   #navItemContainer {
-    display: flex;
-    flex-direction: column;
+    @include flexThis(center, center, column);
   }
 
   #mainHeader {
