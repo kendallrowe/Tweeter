@@ -30,6 +30,37 @@
   #newTweetError {
     font-size: 16px;
   }
+
+  .singleTweet:hover {
+    text-shadow: -0.25px 0 transparent, 0 0.25px transparent, 0.25px 0 transparent, 0 -0.25px transparent;
+    -webkit-box-shadow: 9px 9px 9px -1px transparent;
+    -moz-box-shadow: 9px 9px 9px -1px transparent;
+    box-shadow: 9px 9px 9px -1px transparent;
+  }
+  .singleTweet:hover .tweetFooter .socials,
+.singleTweet:hover .tweetHeader h3,
+.singleTweet:hover .tweetHeader h4 {
+    text-shadow: -0.25px 0 transparent, 0 0.25px transparent, 0.25px 0 transparent, 0 -0.25px transparent;
+    -webkit-box-shadow: 9px 9px 9px -1px transparent;
+    -moz-box-shadow: 9px 9px 9px -1px transparent;
+    box-shadow: 9px 9px 9px -1px transparent;
+  }
+
+  #scrollToTop {
+    display: none !important;
+  }
+
+  #navNewTweet button:focus,
+#navNewTweet button:hover {
+    transform: none !important;
+    /* Animation */
+    animation-name: bounceUpDown;
+    animation-duration: 0.8s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: both;
+  }
 }
 @media only screen and (max-width: 550px) {
   nav {
@@ -80,37 +111,6 @@ nav #navNewTweet {
 .singleTweet .tweetFooter .socials {
     opacity: 1;
   }
-
-  .singleTweet:hover {
-    text-shadow: -0.25px 0 transparent, 0 0.25px transparent, 0.25px 0 transparent, 0 -0.25px transparent;
-    -webkit-box-shadow: 9px 9px 9px -1px transparent;
-    -moz-box-shadow: 9px 9px 9px -1px transparent;
-    box-shadow: 9px 9px 9px -1px transparent;
-  }
-  .singleTweet:hover .tweetFooter .socials,
-.singleTweet:hover .tweetHeader h3,
-.singleTweet:hover .tweetHeader h4 {
-    text-shadow: -0.25px 0 transparent, 0 0.25px transparent, 0.25px 0 transparent, 0 -0.25px transparent;
-    -webkit-box-shadow: 9px 9px 9px -1px transparent;
-    -moz-box-shadow: 9px 9px 9px -1px transparent;
-    box-shadow: 9px 9px 9px -1px transparent;
-  }
-
-  #scrollToTop {
-    display: none !important;
-  }
-
-  #navNewTweet button:focus,
-#navNewTweet button:hover {
-    transform: none !important;
-    /* Animation */
-    animation-name: bounceUpDown;
-    animation-duration: 0.8s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-fill-mode: both;
-  }
 }
 @media only screen and (max-width: 324px) {
   header img {
@@ -132,12 +132,11 @@ nav #navNewTweet {
     max-height: 50px;
     max-width: 50px;
   }
-}
-@media only screen and (max-width: 170px) {
+
   .tweetHeader h4,
 .tweetHeader h3,
 .tweetBody p {
-    word-break: break-word;
+    word-break: break-word !important;
   }
 }
 
