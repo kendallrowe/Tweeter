@@ -4,7 +4,7 @@ const toggleInput = function() {
 };
 
 // Return a string template with the data from a tweet object to be used to append
-function createTweetElement(tweetData) {
+const createTweetElement = function(tweetData) {
   if (tweetData.length !== 0) {
     // Calculate the days since tweet using helper function
     const dateCreated = new Date(tweetData.created_at);
@@ -35,7 +35,7 @@ function createTweetElement(tweetData) {
             </article>
           `;
   }
-}
+};
 
 // Loop through array of tweet objects and append to index page
 const renderTweets = function(tweets) {

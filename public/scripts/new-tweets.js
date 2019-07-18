@@ -19,15 +19,15 @@ $form.on('submit', function() {
   } else {
     // AJAX Post Request
     const serializedInput = $(this).serialize();
-    const post_url = $(this).attr("action"); //get form action url
-    const request_method = $(this).attr("method"); //get form GET/POST method
+    const postURL = $(this).attr("action"); //get form action url
+    const requestMethod = $(this).attr("method"); //get form GET/POST method
 
     $.ajax({
-      url : post_url,
-      type: request_method,
+      url : postURL,
+      type: requestMethod,
       data : serializedInput
       ,
-      success: function(data) {
+      success: function() {
         // If successful, reset value of form, reset character counter, and update tweets elements
         $input.val("");
         $form.find(".counter").html("140");
