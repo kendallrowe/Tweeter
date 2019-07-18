@@ -1,5 +1,4 @@
 const errorMessage = function($errorMsg, message) {
-
   $("#newTweetError").children("h4").html(message);
   $("#newTweetError").slideDown(300);
 }
@@ -13,9 +12,9 @@ const postTweet = function($form, $input, $errorMsg) {
     errorMessage($errorMsg, `Oops! Tweets can only be 140 characters are left. Shorten your tweet and try again.`);
   } else {
     // AJAX Post Request
-    const serializedInput = $(this).serialize();
-    const postURL = $(this).attr("action"); //get form action url
-    const requestMethod = $(this).attr("method"); //get form GET/POST method
+    const serializedInput = $form.serialize();
+    const postURL = $form.attr("action"); //get form action url
+    const requestMethod = $form.attr("method"); //get form GET/POST method
 
     $.ajax({
       url : postURL,
