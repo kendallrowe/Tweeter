@@ -14,7 +14,7 @@ const createTweetElement = function(tweetData) {
             <article class="singleTweet">
               <header class="tweetHeader">
                 <span>
-                  <img src="${tweetData.user.avatars}" alt="Created by Adrien Coquet from the Noun Project">
+                  <img src="${tweetData.user.avatars}" alt="Your Tweet avatar!" title="This is you in the Tweeterverse!">
                   <h3>${tweetData.user.name}</h4>
                 </span>
                 <h4>${tweetData.user.handle}</h4>
