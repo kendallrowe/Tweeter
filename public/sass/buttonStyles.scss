@@ -29,10 +29,17 @@
 @keyframes bounceUpDown {
   from {
     bottom: -40px;
+    color: $quaternary-color;
+  }
+
+  50% {
+    color: $tertiary-color;
+
   }
 
   to {
     bottom: -50px;
+    color: $quaternary-color;
   }
 }
 
@@ -53,7 +60,7 @@
 
   /* Animation */
   animation-name: bounceUpDown;
-  animation-duration: .3s;
+  animation-duration: .8s;
   animation-timing-function: ease-in-out;              
   animation-iteration-count: infinite;    
   animation-direction: alternate;
@@ -64,4 +71,5 @@
 #navNewTweet button:hover {
   outline: none !important;
   transform: scale(1.5);
+  animation: none;
  }

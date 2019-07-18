@@ -1,4 +1,5 @@
 @import "colors";
+@import "fonts";
 
 /* Desktop styles */
 @media only screen and (min-width: 1024px) {
@@ -29,7 +30,7 @@
 /* Very small/mobile */
 @media only screen and (max-width: 768px) {
   #newTweetError {
-    font-size: 16px;
+    font-size: $smallscreen-font-size;
   }
 }
 
@@ -104,7 +105,7 @@
 @media only screen and (max-width: 256px) {
   .tweetHeader h4,
   .tweetHeader h3  {
-    font-size: 20px;
+    font-size: $smallscreen-font-size;
   }
 
   .tweetHeader img {
@@ -115,7 +116,8 @@
 
 @media only screen and (max-width: 170px) {
   .tweetHeader h4,
-  .tweetHeader h3  {
+  .tweetHeader h3,
+  .tweetBody p  {
     word-break: break-word;
   }
 }
