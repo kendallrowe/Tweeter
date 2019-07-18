@@ -1,3 +1,8 @@
+/* blue #4056A1 */
+/* red #EF6969 */
+/* light blue #A4B0F5 */
+/* bright orange #F58F29 */
+/* Black: #545149 */
 .new-tweet {
   display: block;
   padding-top: 10vh;
@@ -52,7 +57,7 @@
 
 .new-tweet .flexRow input {
   background-color: #4056A1;
-  color: #FFFFFF;
+  color: #f4f1ec;
   border: none;
   padding: 5px;
 }
