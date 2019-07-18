@@ -1,3 +1,5 @@
+@import "colors";
+
 /* Fixed bottom of screen scroll to top button */
 #scrollToTop {
   display: none; /* Hidden by default */
@@ -7,8 +9,8 @@
   z-index: 100; /* Make sure it does not overlap */
   border: none; /* Remove borders */
   outline: none; /* Remove outline */
-  background-color: #F58F29; /* Set a background color */
-  color: #4056A1; /* Text color */
+  background-color: $quaternary-color; /* Set a background color */
+  color: $primary-color; /* Text color */
   cursor: pointer; /* Add a mouse pointer on hover */
   padding: 0; /* Some padding */
   border-radius: 100%; /* Rounded corners */
@@ -19,8 +21,8 @@
 }
 
 #scrollToTop:hover {
-  background-color: #4056A1; /* Add a dark-grey background on hover */
-  color: #F58F29; 
+  background-color: $primary-color; /* Add a dark-grey background on hover */
+  color: $quaternary-color; 
 }
 
 /* Top of screen toggle new tweet button */
@@ -41,7 +43,7 @@
   left: 50%;
   z-index: 1001000;
   margin-left: -20px;
-  color: #F58F29;
+  color: $quaternary-color;
   border: none;
   background: transparent;
   width: 40px;
