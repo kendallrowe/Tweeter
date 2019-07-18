@@ -41,10 +41,27 @@
     height: 200px;
     @include flexThis(center, center, row);
     text-align: center;
+
+    #logo,
+    #navNewTweet {
+      clear: both;
+      display: block;
+      margin: 20px 0;
+    }
+
+    #navItemContainer {
+      @include flexThis(center, center, column);
+    }
   }
 
-  .new-tweet {
-    padding-top: 0;
+  #newTweetError {
+    text-align: center;
+  }
+
+  #mainHeader {
+    margin-top: 200px;
+    width: 100%;
+    text-align: center;
   }
 
   .new-tweet:hover {
@@ -52,63 +69,45 @@
     @include boxShadow(transparent);
   }
 
-  #newTweetError {
-    text-align: center;
-  }
-
-  #newTweetError i {
-    display: none;
-  }
-
-  #navItemContainer {
-    @include flexThis(center, center, column);
-  }
-
-  #mainHeader {
-    margin-top: 200px;
-    margin-bottom: 10vh;
-    width: 100%;
-    text-align: center;
-  }
-
-  #logo,
-  #navNewTweet {
-    clear: both;
-    display: block;
-    margin: 20px 0;
-  }
-
-  .tweetBody {
-    text-align: center;
-  }
-
-  .tweetHeader {
-    @include flexThis(space-between, center, column);
-  }
-
-  .tweetHeader h4 {
-    padding: 2vh 0;
-    color: $primary-color;
-  }
-
-  h4,
-  .tweetFooter span{
-    visibility: visible;
-    text-shadow: none !important;
-  }
+  .new-tweet {
+    padding-top: 0;
+    
+    .tweetBody {
+      text-align: center;
+    }
+    
+    .tweetHeader {
+      @include flexThis(space-between, center, column);
+      
+      h4 {
+        padding: 2vh 0;
+        color: $primary-color;
+      }
+    } // tweetHeader
+ 
+    h4,
+    .tweetFooter span{
+      visibility: visible;
+      text-shadow: none !important;
+    }
+  } // new-tweet
 
   #scrollToTop {
     display: none !important;
   }
 }
 
-
 @media only screen and (max-width: 324px) {
   header img{
     max-height: 175px;
     max-width: 175px;
   }
-  
+
+  #newTweetError {
+    i {
+      display: none;
+    }
+  }
 }
 
 @media only screen and (max-width: 256px) {

@@ -29,8 +29,9 @@
   color: #4056A1;
 }
 .tweetHeader h4 {
-  visibility: hidden;
+  opacity: 0;
   color: #4056A1;
+  transition: 0.3s;
 }
 .tweetHeader img {
   max-height: 75px;
@@ -57,7 +58,8 @@
   color: #4056A1;
 }
 .tweetFooter .socials {
-  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s;
 }
 
 /* Hover Format */
@@ -72,7 +74,7 @@
 }
 .singleTweet:hover h4,
 .singleTweet:hover .tweetFooter span {
-  visibility: visible;
+  opacity: 1;
   text-shadow: none !important;
 }
 
