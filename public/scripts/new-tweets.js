@@ -1,3 +1,8 @@
+const errorMessage = function($errorMsg, message) {
+  $errorMsg.children("h4").html(message);
+  $errorMsg.slideDown(300);
+}
+
 // Post new tweet function
 const $form = $('#newTweetCreate');
 $form.on('submit', function() {
@@ -11,11 +16,9 @@ $form.on('submit', function() {
   // If tweet textarea has been filled
   if (!$input.val()) {
     // Error message if empty form filled
-    $errorMsg.children("h4").html(`Make sure to add some text to your Tweet and try again.`);
-    $errorMsg.slideDown(300);
+    errorMessage($errorMsg, `Make sure to add some text to your Tweet and try again.`);
   } else if ($input.val().length > 140) {
-    $errorMsg.children("h4").html(`Oops! Tweets can only be 140 characters are left. Shorten your tweet and try again.`);
-    $errorMsg.slideDown(300);
+    errorMessage($errorMsg, `Oops! Tweets can only be 140 characters are left. Shorten your tweet and try again.`);
   } else {
     // AJAX Post Request
     const serializedInput = $(this).serialize();
@@ -27,16 +30,15 @@ $form.on('submit', function() {
       type: requestMethod,
       data : serializedInput
       ,
-      success: function() {
-        // If successful, reset value of form, reset character counter, and update tweets elements
-        $input.val("");
-        $form.find(".counter").html("140");
-        loadTweets();
-      },
-      error: function(error) {
-        console.log("Tweet was not posted :(");
-        console.log(error);
-      }
+    })
+    .done(function() {
+      // If successful, reset value of form, reset character counter, and update tweets elements
+      $input.val("");
+      $form.find(".counter").html("140");
+      loadTweets();
+    })
+    .fail(function(jqXHR, error) {
+      errorMessage($errorMsg, "Tweet was not posted, looks like there was a server issue: " + error);
     });
   }
 });
