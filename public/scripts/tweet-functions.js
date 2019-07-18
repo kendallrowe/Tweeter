@@ -1,5 +1,6 @@
 // Button to toggle visibility of view tweet form section
 const toggleInput = function() {
+  $("#newTweetError").slideUp(300);
   $(".new-tweet").slideToggle(300);
 };
 
