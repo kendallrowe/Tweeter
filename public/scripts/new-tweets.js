@@ -1,22 +1,10 @@
 const errorMessage = function($errorMsg, message) {
 
-  $("#newTweetError:hidden").children("h4").html(message);
-  console.log($("#newTweetError:hidden").children("h4").html());
-  $("#newTweetError:hidden").css("display", "none");
-  $("#newTweetError:hidden").slideDown(300);
+  $("#newTweetError").children("h4").html(message);
+  $("#newTweetError").slideDown(300);
 }
 
-// Post new tweet function
-$('#newTweetCreate').on('submit', function() {
-  const $form = $('#newTweetCreate')
-  event.preventDefault();
-  const $input = $(this).find("input[type=text], textarea");
-  const $errorMsg = $("#newTweetError");
-  if ($errorMsg.is(":visible")) {
-    // Remove error message from view
-    $errorMsg.slideUp(300);
-  }
-  
+const postTweet = function($form, $input, $errorMsg) {
   // If tweet textarea has been filled
   if (!$input.val()) {
     // Error message if empty form filled
@@ -44,6 +32,23 @@ $('#newTweetCreate').on('submit', function() {
     .fail(function(jqXHR, error) {
       errorMessage($errorMsg, "Tweet was not posted, looks like there was a server issue: " + error);
     });
+  }
+}
+
+// Post new tweet function
+$('#newTweetCreate').on('submit', function() {
+  const $form = $('#newTweetCreate')
+  event.preventDefault();
+  const $input = $(this).find("input[type=text], textarea");
+  const $errorMsg = $("#newTweetError");
+  console.log($errorMsg.is(":visible"));
+  if ($errorMsg.is(":visible")) {
+    // Remove error message from view
+    $errorMsg.slideUp(300, function(){
+      postTweet($form, $input, $errorMsg);
+    });
+  } else {
+    postTweet($form, $input, $errorMsg);
   }
 });
 
