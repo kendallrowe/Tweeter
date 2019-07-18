@@ -11,5 +11,5 @@ const keyCount = function(event) {
   } else {
     $counter.css("color", "#545149");
   }
-}
+};
 
