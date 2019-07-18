@@ -40,7 +40,6 @@ $('#newTweetCreate').on('submit', function() {
   event.preventDefault();
   const $input = $(this).find("input[type=text], textarea");
   const $errorMsg = $("#newTweetError");
-  console.log($errorMsg.is(":visible"));
   if ($errorMsg.is(":visible")) {
     // Remove error message from view
     $errorMsg.slideUp(300, function(){
